@@ -1,0 +1,12 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=<ACCOUNTNAME>;AccountKey=<KEY>;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "storage-connection": "DefaultEndpointsProtocol=https;AccountName=<ACCOUNTNAME>;AccountKey=<KEY>;EndpointSuffix=core.windows.net",
+    "host": "<COSMOSDB ACCOUNT>.gremlin.cosmos.azure.com",
+    "key": "<COSMOSDB KEY>",
+    "database": "persondb",
+    "container": "profile"
+  }
+}

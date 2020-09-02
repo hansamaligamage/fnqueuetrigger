@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Ann",
+    "city": "Colombo"
+  },
+  {
+    "id": 2,
+    "name": "Bobby",
+    "city": "Colombo",
+    "connections": [
+      {
+        "relatedperson": "1",
+        "relationship": "school friend"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Camry",
+    "city": "Kandy",
+    "connections": [
+      {
+        "relatedperson": "1",
+        "relationship": "collegue"
+      },
+      {
+        "relatedperson": "2",
+        "relationship": "school friend"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Danny",
+    "city": "Galle",
+    "connections": [
+      {
+        "relatedperson": "2",
+        "relationship": "collegue"
+      },
+      {
+        "relatedperson": "3",
+        "relationship": "family"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Elen",
+    "city": "Kandy",
+    "connections": [
+      {
+        "relatedperson": "1",
+        "relationship": "family"
+      },
+      {
+        "relatedperson": "2",
+        "relationship": "school friend"
+      },
+      {
+        "relatedperson": "3",
+        "relationship": "school friend"
+      }
+    ]
+  }
+]
