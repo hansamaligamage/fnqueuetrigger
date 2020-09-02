@@ -32,7 +32,7 @@ This sample code explains how to track the new profile items in the queue storag
    }
  ```
 ### Generate the graph query
- ```
+```
  public void AddPerson(Person person, ILogger log)
  {
     var gremlinServer = InitiateGraph();
@@ -52,5 +52,5 @@ This sample code explains how to track the new profile items in the queue storag
         }
     }
 }
-        ```
+```
 
