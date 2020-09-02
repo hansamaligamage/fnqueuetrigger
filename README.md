@@ -19,7 +19,8 @@ This sample code explains how to track the new profile items in the queue storag
  ### Run method in Queue trigger
  ```
  [FunctionName("CreateTreeStructure")]
- public static void Run([QueueTrigger("people-queue", Connection = "storage-connection")]string item, ILogger log)
+ public static void Run([QueueTrigger("people-queue", Connection = "storage-connection")]string item,
+   ILogger log)
  {
     log.LogInformation($"C# Queue trigger function processed: {item}");
     var person = JsonConvert.DeserializeObject<Person>(item);
