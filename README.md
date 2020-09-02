@@ -45,7 +45,8 @@ This sample code explains how to track the new profile items in the queue storag
     {
         foreach (Connection connection in person.Connections)
         {
-            query = "g.V('" + person.Id + "').addE('" + connection.Relationship + "').to(g.V('" + connection.RelatedPerson 
+            query = "g.V('" + person.Id + "').addE('" + connection.Relationship + "')
+              .to(g.V('" + connection.RelatedPerson 
                 + "'))";
             ExecuteQuery(gremlinServer, query);
         }
