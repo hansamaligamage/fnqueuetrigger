@@ -6,7 +6,7 @@ This sample code explains how to track the new profile items in the queue storag
 * .NET Core 3.1 on Visual Studio 2019
 * Queue storage is used on Azure storage account
 * Azure functions v3 (Microsoft.NET.SDK.Functions - 3.0.9) 
-* Gremlin.Net used to connect to the Azure Cosmos DB Gremlin API  
+* Gremlin.Net - 3.4.8 used to connect to the Azure Cosmos DB Gremlin API  
 
 ## How to run the solution
  * Create a storage account and create a queue inside it, Go to the Access keys section and get the connection string and provide it to the storage-connection setting
@@ -31,6 +31,17 @@ This sample code explains how to track the new profile items in the queue storag
 
    }
  ```
+ 
+### Create the Graph client
+```
+private GremlinServer InitiateGraph ()
+{
+   string containerLink = "/dbs/" + database + "/colls/" + container;
+   var gremlinServer = new GremlinServer(hostname: host, port: port, enableSsl: true, username: containerLink, password: key);
+   return gremlinServer;
+}
+```
+ 
 ### Generate the graph query
 ```
  public void AddPerson(Person person, ILogger log)
